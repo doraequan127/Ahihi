@@ -7,27 +7,6 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
-[Serializable]
-public class PremierLeague
-{
-    public string name;
-    public List<Club> clubsList;
-}
-
-[Serializable]
-public struct Club
-{
-    public string name;
-    public int age;
-    public List<Player> playersList;
-}
-
-[Serializable]
-public struct Player
-{
-    public string name;
-    public int number;
-}
 
 public class ahihi : MonoBehaviour
 {
@@ -49,6 +28,25 @@ public class ahihi : MonoBehaviour
     //{
     //    if (manUtd == (manUtd1 | manUtd2))
     //        print("Đang chọn " + manUtd1 + " và " + manUtd2 + " cùng 1 lúc.");
+    //}
+
+    #endregion
+
+    #region Gizmos
+
+    //Hiển thị Gizmos khi gameobject mà script này gắn vào được selected
+    //void OnDrawGizmosSelected()
+    //{
+    //    Gizmos.color = new Color(1, 0, 0, 0.5f);
+    //    //Gizmos.DrawCube(transform.position, new Vector3(10, 10, 10));
+    //    Gizmos.DrawRay(transform.position, Vector3.right * 100);
+    //}
+
+    //Luôn luôn hiển thị Gizmos
+    //void OnDrawGizmos()
+    //{
+    //    Gizmos.color = new Color(1, 0, 0, 0.5f);
+    //    Gizmos.DrawCube(transform.position, new Vector3(10, 10, 10));
     //}
 
     #endregion
