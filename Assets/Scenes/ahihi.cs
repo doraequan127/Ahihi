@@ -34,7 +34,7 @@ public class ahihi : MonoBehaviour
 
     #region Gizmos
 
-    //Hiển thị Gizmos khi gameobject mà script này gắn vào được selected
+    //Hiển thị Gizmos khi gameobject được selected
     //void OnDrawGizmosSelected()
     //{
     //    Gizmos.color = new Color(1, 0, 0, 0.5f);
@@ -57,7 +57,7 @@ public class ahihi : MonoBehaviour
         
     }
 
-    public void Update()
+    private void Update()
     {
         
     }
