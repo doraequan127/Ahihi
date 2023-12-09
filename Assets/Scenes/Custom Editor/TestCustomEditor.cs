@@ -6,5 +6,17 @@ using UnityEngine;
 public class TestCustomEditor : MonoBehaviour
 {
     public int garnacho;
+    public Bayern bayern;
     [TextArea] public string mainoo;
+
+    public void PrintSomething()
+    {
+        print("print ra cai j do");
+    }
+}
+
+[Serializable]
+public class Bayern
+{
+    public string tomasTuchel;
 }

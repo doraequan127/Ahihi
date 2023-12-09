@@ -44,8 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aa0b1e78eb50c74d860b86045502ac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  garnacho: 159
+  garnacho: 144
   mainoo: "R\u1ED3i 1 ng\xE0y v\u1EAFng em\nB\u01B0\u1EDBc ch\xE2n bu\u1ED3n t\xEAnh\r\nR\u1ED3i
     t\u1EEBng ng\xE0y nh\u1EDB em\nTr\xE1i tim kh\xF4ng ng\u1EE7 y\xEAn.\n\r\nTh\xF4i
     xin em h\xE3y \nH\u1EDDn d\u1ED7i nh\u01B0 ng\xE0y m\u1EDBi quen nhau\r\nTh\xF4i
     xin em h\xE3y \nH\u1EDD h\u1EEFng nh\u01B0 l\xE0 \u0111\xE3 xa nhau."
+  bayern:
+    tomasTuchel: Tao la hlv Bayern Munich

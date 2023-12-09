@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.SqlTypes;
 using System.Drawing.Printing;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEditor.AnimatedValues;
 using UnityEngine;
@@ -46,7 +47,10 @@ public class TestCustomEditor_ : Editor
 
         GUILayout.Space(20);
         if (GUILayout.Button(new GUIContent("Click me", "This is tool tip"), GUILayout.ExpandWidth(false), GUILayout.ExpandHeight(false), GUILayout.Width(serializedObject.FindProperty("garnacho").intValue), GUILayout.Height(50)))
+        {
             Debug.Log("Click me");
+            target.GetComponent<TestCustomEditor>().PrintSomething(); //Dùng target để gọi hàm public
+        }
 
         //horizontalScrollbarValue = GUILayout.HorizontalScrollbar(horizontalScrollbarValue, 1.0f, 0.0f, 10.0f);
         //horizontalSliderValue = GUILayout.HorizontalSlider(horizontalSliderValue, 0.0f, 10.0f);
@@ -119,7 +123,7 @@ public class TestCustomEditor_ : Editor
         EditorGUILayout.EndFoldoutHeaderGroup();
 
         GUILayout.Space(20);
-        foldoutBoolValue = EditorGUILayout.Foldout(foldoutBoolValue, "Đây là Fouldout");
+        foldoutBoolValue = EditorGUILayout.Foldout(foldoutBoolValue, "Đây là Foldout");
         if (foldoutBoolValue)
             GUILayout.Label("Đây là Foldout");
 
@@ -136,6 +140,9 @@ public class TestCustomEditor_ : Editor
 
         GUILayout.Space(20);
         EditorGUILayout.PropertyField(serializedObject.FindProperty("garnacho"));
+
+        GUILayout.Space(20);
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("bayern").FindPropertyRelative("tomasTuchel"));
 
         serializedObject.ApplyModifiedProperties();
     }
