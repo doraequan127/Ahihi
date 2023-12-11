@@ -51,6 +51,17 @@ public class ahihi : MonoBehaviour
 
     #endregion
 
+    #region Hiển thị ra 1 nút trong dấu 3 chấm ở góc trên phải component Ahihi, nó sẽ thực thi hàm này
+
+    // Tương đối giống [MenuItem] nhưng khác biệt ở chỗ [MenuItem] chỉ chạy đc hàm static, còn [ContextMenu] chạy đc hàm private
+
+    //[ContextMenu("Hát bài quốc ca của Manchester United")]
+    //void GloryGlory()
+    //{
+    //    print("Glory Glory Man United !");
+    //}
+
+    #endregion
 
     private void Start()
     {
