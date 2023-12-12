@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Ahihi/Demo.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Flappy Bird/Scenes/2. Game.unity
+    path: Assets/Flappy Bird/Scenes/Flappy Bird Scene 2.unity
     guid: 91be9a3045a419e49b8150bd17733cea
   - enabled: 1
     path: Assets/Ahihi Projects/Draw/Scenes/Draw Scene 2.unity
