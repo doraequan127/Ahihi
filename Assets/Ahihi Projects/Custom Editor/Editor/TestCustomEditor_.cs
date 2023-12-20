@@ -42,6 +42,8 @@ public class TestCustomEditor_ : Editor
     {
         base.OnInspectorGUI();
 
+        target.GetComponent<Transform>().localScale = target.GetComponent<TestCustomEditor>().testScale;
+
         GUILayout.Space(20);
         GUILayout.Box("Custom Editor tính từ đây :");
 
@@ -61,7 +63,11 @@ public class TestCustomEditor_ : Editor
         GUILayout.EndScrollView();
 
         GUILayout.Space(20);
+        GUILayout.BeginHorizontal();
+        textFieldValue = GUILayout.TextField(textFieldValue, 25);
+        GUILayout.Space(20);
         passwordFieldValue = GUILayout.PasswordField(passwordFieldValue, '*', 25);
+        GUILayout.EndHorizontal();
 
         GUILayout.Space(20);
         textAreaValue = GUILayout.TextArea(textAreaValue, 200);
@@ -69,9 +75,6 @@ public class TestCustomEditor_ : Editor
         //GUI.backgroundColor = Color.yellow;
         //GUI.color = Color.yellow;
         //GUI.enabled = false;
-
-        GUILayout.Space(20);
-        textFieldValue = GUILayout.TextField(textFieldValue, 25);
         
         GUILayout.Space(20);
         toggleValue = GUILayout.Toggle(toggleValue, "A Toggle text");

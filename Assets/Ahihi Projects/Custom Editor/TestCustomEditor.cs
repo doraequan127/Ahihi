@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class TestCustomEditor : MonoBehaviour
 {
+    public Vector3 testScale;
     public int garnacho;
     public Bayern bayern;
     [TextArea] public string mainoo;
