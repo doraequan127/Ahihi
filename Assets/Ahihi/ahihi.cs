@@ -63,14 +63,48 @@ public class ahihi : MonoBehaviour
 
     #endregion
 
+    ResourceRequest load;
+    public Sprite oa;
 
     private void Start()
     {
-        
+        //load = Resources.LoadAsync<Sprite>("3");
+        //oa = Resources.Load<Sprite>("4");
+
+        //StartCoroutine(LoadSomething());
+
+        TestBatDongBo();
+    }
+
+    IEnumerator LoadSomething()
+    {
+        load = Resources.LoadAsync<Sprite>("4");
+        while (!load.isDone)
+        {
+            print("Chua load xong" + load.progress);
+            yield return null;
+        }
+        print("Load thanh cong");
+        oa = load.asset as Sprite;
+        print(oa.name);
     }
 
     private void Update()
     {
-        
+        //print(load.progress + " " + load.isDone);
+    }
+
+    async Task TestBatDongBo()
+    {
+        //oa = await Resources.Load<Sprite>("4");
+        print("Bat dau game");
+        await Task.Delay(3000);
+        //int t = await hojlund();
+        print("Sau 3 giay");
+    }
+
+    async Task<int> hojlund()
+    {
+        return 3;
     }
 }
