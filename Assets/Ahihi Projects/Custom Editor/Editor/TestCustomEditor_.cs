@@ -63,6 +63,9 @@ public class TestCustomEditor_ : Editor
         GUILayout.EndScrollView();
 
         GUILayout.Space(20);
+        EditorGUILayout.HelpBox("Đây là 1 cảnh báo!", MessageType.Error);
+
+        GUILayout.Space(20);
         GUILayout.BeginHorizontal();
         textFieldValue = GUILayout.TextField(textFieldValue, 25);
         GUILayout.Space(20);
