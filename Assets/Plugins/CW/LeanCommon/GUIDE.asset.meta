@@ -8,8 +8,8 @@ NativeFormatImporter:
   assetBundleVariant: 
 AssetOrigin:
   serializedVersion: 1
-  productId: 30111
-  packageName: Lean Touch
-  packageVersion: 3.0.1
+  productId: 28504
+  packageName: Lean Localization
+  packageVersion: 2.0.3
   assetPath: Assets/Plugins/CW/LeanCommon/GUIDE.asset
-  uploadId: 619404
+  uploadId: 619399
