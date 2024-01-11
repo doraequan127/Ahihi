@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.UI;
 
 
@@ -86,8 +88,11 @@ public class ahihi : MonoBehaviour
     }
     #endregion
 
+    public AssetReference assetReference;
+
     private void Start()
     {
+        AsyncOperationHandle<Button> a = Addressables.LoadAssetAsync<Button>("");
         
     }
 
