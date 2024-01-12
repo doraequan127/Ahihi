@@ -92,7 +92,6 @@ public class ahihi : MonoBehaviour
 
     private void Start()
     {
-        AsyncOperationHandle<Button> a = Addressables.LoadAssetAsync<Button>("");
         
     }
 
