@@ -400,7 +400,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &783138670
 RectTransform:
   m_ObjectHideFlags: 0
@@ -470,11 +470,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b50d536c3785ad54e8cb99d3696a98da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  assetReference:
-    m_AssetGUID: e14994e641dbf4a40afc92087c9b3f7a
-    m_SubObjectName: 
-    m_SubObjectType: 
-    m_EditorAssetChanged: 0
+  dovbyk: 08000000060000000700000005000000030000000a000000090000004200000002000000440100000100000014000000
+  targetSum: 12
+  result: []
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0

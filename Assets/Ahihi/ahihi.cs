@@ -3,13 +3,13 @@ using Newtonsoft.Json;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.UI;
-
 
 public class ahihi : MonoBehaviour
 {
@@ -88,11 +88,9 @@ public class ahihi : MonoBehaviour
     }
     #endregion
 
-    public AssetReference assetReference;
-
     private void Start()
     {
-        
+
     }
 
     private void Update()
