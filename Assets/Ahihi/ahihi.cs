@@ -88,9 +88,25 @@ public class ahihi : MonoBehaviour
     }
     #endregion
 
+    WebCamTexture webCamTexture;
+
+    private void Awake()
+    {
+        Screen.orientation = ScreenOrientation.LandscapeLeft;
+    }
+
     private void Start()
     {
+        //GetComponent<RectTransform>().sizeDelta = new Vector2(GetComponent<RectTransform>().sizeDelta.x,
+        //    GetComponent<RectTransform>().sizeDelta.x * Screen.height / Screen.width);
 
+        foreach (var i in WebCamTexture.devices)
+            if (i.isFrontFacing)
+                webCamTexture = new WebCamTexture(i.name);
+
+        //webCamTexture = new WebCamTexture();
+        GetComponent<RawImage>().texture = webCamTexture;
+        webCamTexture.Play();
     }
 
     private void Update()

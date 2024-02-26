@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using Lean.Common;
 using CW.Common;
+using System.Linq;
 
 namespace Lean.Localization
 {
@@ -927,18 +928,55 @@ namespace Lean.Localization.Editor
 			var rectC = rectA; rectC.xMin = rectC.xMax - 35.0f;
 			EditorGUI.LabelField(rectA, "Languages", EditorStyles.boldLabel);
 			languagesFilter = EditorGUI.TextField(rectB, "", languagesFilter);
-			BeginDisabled(string.IsNullOrEmpty(languagesFilter) == true || LeanLocalization.CurrentLanguages.ContainsKey(languagesFilter) == true);
+			//BeginDisabled(string.IsNullOrEmpty(languagesFilter) == true || LeanLocalization.CurrentLanguages.ContainsKey(languagesFilter) == true);
 				if (GUI.Button(rectC, "Add", EditorStyles.miniButton) == true)
 				{
-					var language = LeanLocalization.AddLanguageToFirst(languagesFilter);
+					if (string.IsNullOrEmpty(languagesFilter) == true)
+					{
+						var menu = new GenericMenu();
 
-					LeanLocalization.UpdateTranslations();
+						var languagePrefabs = AssetDatabase.FindAssets("t:GameObject").
+							Select((guid) => AssetDatabase.LoadAssetAtPath<GameObject>(AssetDatabase.GUIDToAssetPath(guid))).
+							Where((prefab) => prefab.GetComponent<LeanLanguage>() != null);
+						
+						foreach (var languagePrefab in languagePrefabs)
+						{
+							if (LeanLocalization.CurrentLanguages.ContainsKey(languagePrefab.name) == true)
+							{
+								menu.AddItem(new GUIContent(languagePrefab.name), true, () => {});
+							}
+							else
+							{
+								menu.AddItem(new GUIContent(languagePrefab.name), false, () =>
+									{
+										if (LeanLocalization.Instances.Count > 0)
+										{
+											var language = UnityEditor.PrefabUtility.InstantiatePrefab(languagePrefab, LeanLocalization.Instances[0].transform);
 
-					Selection.activeObject = language;
+											LeanLocalization.UpdateTranslations();
 
-					EditorGUIUtility.PingObject(language);
+											Selection.activeObject = language;
+
+											EditorGUIUtility.PingObject(language);
+										}
+									});
+							}
+						}
+
+						menu.ShowAsContext();
+					}
+					else
+					{
+						var language = LeanLocalization.AddLanguageToFirst(languagesFilter);
+
+						LeanLocalization.UpdateTranslations();
+
+						Selection.activeObject = language;
+
+						EditorGUIUtility.PingObject(language);
+					}
 				}
-			EndDisabled();
+			//EndDisabled();
 
 			if (LeanLocalization.CurrentLanguages.Count > 0 || string.IsNullOrEmpty(languagesFilter) == false)
 			{

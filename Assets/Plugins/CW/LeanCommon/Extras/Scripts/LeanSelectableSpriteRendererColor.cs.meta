@@ -14,6 +14,6 @@ AssetOrigin:
   serializedVersion: 1
   productId: 28504
   packageName: Lean Localization
-  packageVersion: 2.0.3
+  packageVersion: 2.0.4
   assetPath: Assets/Plugins/CW/LeanCommon/Extras/Scripts/LeanSelectableSpriteRendererColor.cs
-  uploadId: 619399
+  uploadId: 641118
