@@ -7,8 +7,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.AddressableAssets;
-using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.UI;
 
 public class ahihi : MonoBehaviour
@@ -88,11 +86,10 @@ public class ahihi : MonoBehaviour
     }
     #endregion
 
-    WebCamTexture webCamTexture;
 
     private void Awake()
     {
-        print(linhtinh.oe());
+        
     }
 
     private void Start()
