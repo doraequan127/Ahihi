@@ -25,7 +25,7 @@ namespace FlappyBird
             //transform.Rotate(0, 0, -speed_xoay);
             if (Input.GetMouseButtonDown(0) && !Quản_lý_các_hàm.is_Died)
             {
-                rigidbody2D_.velocity = new Vector2(rigidbody2D_.velocity.x, 8);
+                rigidbody2D_.linearVelocity = new Vector2(rigidbody2D_.linearVelocity.x, 8);
                 Quản_lý_các_hàm.playSound_Fly();
                 //transform.Rotate(0, 0, góc + 30);
                 //góc = -30;
