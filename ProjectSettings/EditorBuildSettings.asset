@@ -12,5 +12,5 @@ EditorBuildSettings:
     path: Assets/Ahihi/Demo.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
-    com.unity.addressableassets: {fileID: 11400000, guid: 8623ef62a77b06446ab3d8398d90e4dd, type: 2}
+    com.unity.addressableassets: {fileID: 11400000, guid: f0b3501f1357d9848b4e2026d353975b, type: 2}
   m_UseUCBPForAssetBundles: 0

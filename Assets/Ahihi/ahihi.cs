@@ -7,6 +7,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.Events;
+using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.UI;
 
 public class ahihi : MonoBehaviour
@@ -86,6 +89,40 @@ public class ahihi : MonoBehaviour
     }
     #endregion
 
+    #region Addressables
+
+    //AsyncOperationHandle<Sprite> async_;
+    //[SerializeField] AssetReference songokuImage;
+
+    //void InstantiateSongoku()
+    //{
+    //    //async_ = Addressables.LoadAssetAsync<Sprite>("Tên địa chỉ addressable của prefab Songoku");
+
+    //    if (!songokuImage.RuntimeKeyIsValid())  //Nếu chưa kéo thả asset nào vào ô songokuPrefab
+    //    {
+    //        print("Đã kéo ảnh vào ô songokuImage đéo đâu!");
+    //        return;
+    //    }
+    //    async_ = songokuImage.LoadAssetAsync<Sprite>();
+
+    //    async_.Completed += OnLoadSongokuComplete;
+    //}
+
+    //void OnLoadSongokuComplete(AsyncOperationHandle<Sprite> ec)
+    //{
+    //    if (ec.Status == AsyncOperationStatus.Succeeded)
+    //    {
+    //        GetComponent<Image>().sprite = ec.Result;
+    //        print("Load thanh cong");
+    //    }
+    //}
+
+    //void OnDisable()
+    //{
+    //    async_.Completed -= OnLoadSongokuComplete;
+    //}
+
+    #endregion
 
     private void Awake()
     {
