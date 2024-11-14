@@ -4,6 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using UnityEditor;
 using UnityEngine;
@@ -126,7 +127,10 @@ public class ahihi : MonoBehaviour
 
     private void Awake()
     {
-        
+        StringBuilder a = new StringBuilder();
+        a.AppendLine("dit con me");
+        a.AppendLine("chung may");
+        print(a);
     }
 
     private void Start()
