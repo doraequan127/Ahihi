@@ -15,9 +15,9 @@ MonoBehaviour:
   m_DefaultGroup: 464e433aceecb3a44b3b40988ae0297e
   m_currentHash:
     serializedVersion: 2
-    Hash: 56db840abb12ec0c5cf167c003a4bc83
+    Hash: b30f9ff49d2ef50e26bd0b51bf61bef1
   m_OptimizeCatalogSize: 0
-  m_BuildRemoteCatalog: 0
+  m_BuildRemoteCatalog: 1
   m_CatalogRequestsTimeout: 0
   m_DisableCatalogUpdateOnStart: 0
   m_InternalIdNamingMode: 0
@@ -50,15 +50,16 @@ MonoBehaviour:
   m_CheckForContentUpdateRestrictionsOption: 0
   m_MonoScriptBundleCustomNaming: 
   m_RemoteCatalogBuildPath:
-    m_Id: 
+    m_Id: a36fc2dfea8a19146be901630d17bfcb
   m_RemoteCatalogLoadPath:
-    m_Id: 
-  m_ContentStateBuildPathProfileVariableName: 
+    m_Id: e8f7577794480ce43ab44bb1e3aaa264
+  m_ContentStateBuildPathProfileVariableName: <default settings path>
   m_CustomContentStateBuildPath: 
   m_ContentStateBuildPath: 
   m_BuildAddressablesWithPlayerBuild: 0
   m_overridePlayerVersion: '[UnityEditor.PlayerSettings.bundleVersion]'
   m_GroupAssets:
+  - {fileID: 11400000, guid: fc58382aed19708408dccfb3213e9bd0, type: 2}
   - {fileID: 11400000, guid: f1a5df26fecc4364aa5ac458ea833f85, type: 2}
   m_BuildSettings:
     m_LogResourceManagerExceptions: 1
@@ -99,6 +100,8 @@ MonoBehaviour:
   m_LabelTable:
     m_LabelNames:
     - default
+    - songoku
+    - conan
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 5acf5b776731dcc468a4f97bb9bfb914, type: 2}

@@ -1,4 +1,5 @@
-﻿using DG.Tweening;
+﻿using Cysharp.Threading.Tasks;
+using DG.Tweening;
 using Newtonsoft.Json;
 using System;
 using System.Collections;
@@ -6,11 +7,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Unity.Collections;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.Events;
 using UnityEngine.ResourceManagement.AsyncOperations;
+using UnityEngine.U2D;
 using UnityEngine.UI;
 
 public class ahihi : MonoBehaviour
@@ -90,47 +93,63 @@ public class ahihi : MonoBehaviour
     }
     #endregion
 
-    #region Addressables
-
-    //AsyncOperationHandle<Sprite> async_;
-    //[SerializeField] AssetReference songokuImage;
-
-    //void InstantiateSongoku()
+    #region Event (có 2 cách là delegate của C# và UnityEvent của unity)
+    ////Cách 1: delegate
+    //delegate void a(int b, string c);
+    //a songoku;
+    //void RunDelegate()
     //{
-    //    //async_ = Addressables.LoadAssetAsync<Sprite>("Tên địa chỉ addressable của prefab Songoku");
-
-    //    if (!songokuImage.RuntimeKeyIsValid())  //Nếu chưa kéo thả asset nào vào ô songokuPrefab
-    //    {
-    //        print("Đã kéo ảnh vào ô songokuImage đéo đâu!");
-    //        return;
-    //    }
-    //    async_ = songokuImage.LoadAssetAsync<Sprite>();
-
-    //    async_.Completed += OnLoadSongokuComplete;
+    //    songoku += ditconme;
+    //    songoku += muvodoi;
+    //    songoku(5, "you never walk alone");
     //}
 
-    //void OnLoadSongokuComplete(AsyncOperationHandle<Sprite> ec)
+    ////Cách 2: UnityEvent (nên dùng)
+    //public UnityEvent<int, string> b; //có thể serialize ra Inspector (cái này delegate ko làm được)
+    //void RunUnityEvent()
     //{
-    //    if (ec.Status == AsyncOperationStatus.Succeeded)
-    //    {
-    //        GetComponent<Image>().sprite = ec.Result;
-    //        print("Load thanh cong");
-    //    }
+    //    b = new UnityEvent<int, string>();
+    //    b.AddListener(ditconme);
+    //    b.AddListener(muvodoi);
+    //    b.Invoke(3, "glory");
     //}
 
-    //void OnDisable()
+    //void ditconme(int g, string h)
     //{
-    //    async_.Completed -= OnLoadSongokuComplete;
+    //    print("Dit cu chung may");
     //}
 
+    //void muvodoi(int g, string h)
+    //{
+    //    print("mu vo doi");
+    //}
+    #endregion
+
+    #region Thông tin về thiết bị
+    void PrintDeviceInfo()
+    {
+        print("Device Name: " + SystemInfo.deviceName);
+        print("Device Model: " + SystemInfo.deviceModel);
+        print("Device Type: " + SystemInfo.deviceType);
+        print("Batery Status: " + SystemInfo.batteryStatus);
+        print("batteryLevel: " + SystemInfo.batteryLevel);
+        print("Operating System: " + SystemInfo.operatingSystem);
+        print("processorModel: " + SystemInfo.processorModel);
+        print("processorType: " + SystemInfo.processorType);
+        print("processorCount: " + SystemInfo.processorCount);
+        print("processorFrequency: " + SystemInfo.processorFrequency);
+        print("processorManufacturer: " + SystemInfo.processorManufacturer);
+        print("systemMemorySize: " + SystemInfo.systemMemorySize);
+        print("graphicsDeviceName: " + SystemInfo.graphicsDeviceName);
+        print("graphicsDeviceType: " + SystemInfo.graphicsDeviceType);
+        print("graphicsDeviceVendor: " + SystemInfo.graphicsDeviceVendor);
+        //Handheld.Vibrate(); //Rung máy
+    }
     #endregion
 
     private void Awake()
     {
-        StringBuilder a = new StringBuilder();
-        a.AppendLine("dit con me");
-        a.AppendLine("chung may");
-        print(a);
+        
     }
 
     private void Start()
@@ -141,5 +160,10 @@ public class ahihi : MonoBehaviour
     private void Update()
     {
         
+    }
+
+    public void dcm()
+    {
+        print("1 cham la say dam");
     }
 }

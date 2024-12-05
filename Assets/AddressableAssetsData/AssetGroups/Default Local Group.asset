@@ -15,10 +15,27 @@ MonoBehaviour:
   m_GroupName: Default Local Group
   m_GUID: 464e433aceecb3a44b3b40988ae0297e
   m_SerializeEntries:
+  - m_GUID: 093fd0c75d5c20047baba2ad47a57589
+    m_Address: "Assets/Ahihi/D\u1EA1 kh\xFAc.mp3"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9fc0d4010bbf28b4594072e72b8655ab
+    m_Address: Assets/Ahihi/Demo.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c262de22613fe5342a72f3e01607d1aa
+    m_Address: Assets/Ahihi/Double Dagger Stab.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - songoku
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e14994e641dbf4a40afc92087c9b3f7a
     m_Address: Assets/Ahihi/3.png
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - conan
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 15843d1667f03434f956880beab45a48, type: 2}
