@@ -143,9 +143,17 @@ public class ahihi : MonoBehaviour
         print("graphicsDeviceName: " + SystemInfo.graphicsDeviceName);
         print("graphicsDeviceType: " + SystemInfo.graphicsDeviceType);
         print("graphicsDeviceVendor: " + SystemInfo.graphicsDeviceVendor);
+        print(Application.unityVersion);
+        print(Application.version);
+        print(Application.dataPath);
+        print(Application.installerName); //Tên store hay package cài đặt cái game này
+        print(Application.platform);
+        print(Application.systemLanguage);
         //Handheld.Vibrate(); //Rung máy
     }
     #endregion
+
+    public Color a;
 
     private void Awake()
     {
