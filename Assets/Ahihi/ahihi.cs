@@ -153,7 +153,6 @@ public class ahihi : MonoBehaviour
     }
     #endregion
 
-    public Color a;
 
     private void Awake()
     {
