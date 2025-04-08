@@ -40,6 +40,13 @@ public class ahihi : MonoBehaviour
 
     #endregion
 
+    #region Chỉnh lại tên của enum trên Inspector
+    //public enum ManUtd
+    //{
+    //    [InspectorName("Siêu sao số 1 thế giới")] ronaldo
+    //}
+    #endregion
+
     #region Gizmos
 
     //Hiển thị Gizmos khi gameobject được selected
@@ -152,7 +159,6 @@ public class ahihi : MonoBehaviour
         //Handheld.Vibrate(); //Rung máy
     }
     #endregion
-
 
     private void Awake()
     {
