@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Ahihi/Demo.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Ahihi Projects/Mirror/Mirror.unity
+    guid: 343ffc5ae6fb8894eb3354ae6af622f9
+  - enabled: 1
+    path: Assets/Ahihi Projects/Addressables/Start Scene.unity
+    guid: 303016b2541c75a46bf81e34d2f2577b
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: f0b3501f1357d9848b4e2026d353975b, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 1b58ccecb1530054bb78781f06a253ca, type: 3}

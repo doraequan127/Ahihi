@@ -5,10 +5,6 @@ public class AhihiBeginSceneAdressables : MonoBehaviour
 {
     [SerializeField] string address;
     [SerializeField] AssetReference reference;
-    void Start()
-    {
-        DontDestroyOnLoad(gameObject);
-    }
 
     void Update()
     {
