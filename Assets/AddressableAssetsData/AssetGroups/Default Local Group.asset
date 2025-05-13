@@ -20,6 +20,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4c5803febf8fd8843a87149ff305485f
+    m_Address: Assets/Ahihi Projects/Addressables/Cube.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6bc24902ab986d64182df5481efe09ea
     m_Address: Assets/Ahihi Projects/Addressables/187791_196114080431321_6249385_n.jpg
     m_ReadOnly: 0

@@ -13,13 +13,90 @@ MonoBehaviour:
   m_Name: ProfileDataSourceSettings
   m_EditorClassIdentifier: 
   profileGroupTypes:
+  - m_GroupTypePrefix: Automatic
+    m_Variables:
+    - m_Suffix: BuildPath
+      m_Value: CCDBuildData/ManagedEnvironment/ManagedBucket/ManagedBadge
+    - m_Suffix: EnvironmentName
+      m_Value: production
+    - m_Suffix: LoadPath
+      m_Value: https://d1b9c7e1-b34c-4d54-b7a5-1de1ca1d5f20.client-api.unity3dusercontent.com/client_api/v1/environments/{CcdManager.EnvironmentName}/buckets/{CcdManager.BucketId}/release_by_badge/{CcdManager.Badge}/entry_by_path/content/?path=
   - m_GroupTypePrefix: Built-In
     m_Variables:
     - m_Suffix: BuildPath
       m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
     - m_Suffix: LoadPath
       m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
-  environments: []
+  - m_GroupTypePrefix: CCD.d1b9c7e1-b34c-4d54-b7a5-1de1ca1d5f20.70bfb91f-a6e8-44ea-829f-6c2d7086e174.26cbe2fa-3c27-459c-ac76-388126aaac9f.latest
+    m_Variables:
+    - m_Suffix: BuildPath
+      m_Value: CCDBuildData/70bfb91f-a6e8-44ea-829f-6c2d7086e174/26cbe2fa-3c27-459c-ac76-388126aaac9f/latest
+    - m_Suffix: CcdBadgeName
+      m_Value: latest
+    - m_Suffix: CcdBucketId
+      m_Value: 26cbe2fa-3c27-459c-ac76-388126aaac9f
+    - m_Suffix: CcdBucketName
+      m_Value: Android
+    - m_Suffix: Environmentid
+      m_Value: 70bfb91f-a6e8-44ea-829f-6c2d7086e174
+    - m_Suffix: Environmentname
+      m_Value: production
+    - m_Suffix: LoadPath
+      m_Value: https://d1b9c7e1-b34c-4d54-b7a5-1de1ca1d5f20.client-api.unity3dusercontent.com/client_api/v1/environments/production/buckets/26cbe2fa-3c27-459c-ac76-388126aaac9f/release_by_badge/latest/entry_by_path/content/?path=
+    - m_Suffix: PromoteOnly
+      m_Value: True
+  - m_GroupTypePrefix: CCD.d1b9c7e1-b34c-4d54-b7a5-1de1ca1d5f20.70bfb91f-a6e8-44ea-829f-6c2d7086e174.4bee0295-fcd5-4846-b702-0ab6d19584e5.latest
+    m_Variables:
+    - m_Suffix: BuildPath
+      m_Value: CCDBuildData/70bfb91f-a6e8-44ea-829f-6c2d7086e174/4bee0295-fcd5-4846-b702-0ab6d19584e5/latest
+    - m_Suffix: CcdBadgeName
+      m_Value: latest
+    - m_Suffix: CcdBucketId
+      m_Value: 4bee0295-fcd5-4846-b702-0ab6d19584e5
+    - m_Suffix: CcdBucketName
+      m_Value: Pedri
+    - m_Suffix: Environmentid
+      m_Value: 70bfb91f-a6e8-44ea-829f-6c2d7086e174
+    - m_Suffix: Environmentname
+      m_Value: production
+    - m_Suffix: LoadPath
+      m_Value: https://d1b9c7e1-b34c-4d54-b7a5-1de1ca1d5f20.client-api.unity3dusercontent.com/client_api/v1/environments/production/buckets/4bee0295-fcd5-4846-b702-0ab6d19584e5/release_by_badge/latest/entry_by_path/content/?path=
+    - m_Suffix: PromoteOnly
+      m_Value: False
+  - m_GroupTypePrefix: CCD.d1b9c7e1-b34c-4d54-b7a5-1de1ca1d5f20.ae554ef2-c04b-4e13-b2b7-bcd928dc2bda.589b953e-291f-4543-8283-89c626bbe466.latest
+    m_Variables:
+    - m_Suffix: BuildPath
+      m_Value: CCDBuildData/ae554ef2-c04b-4e13-b2b7-bcd928dc2bda/589b953e-291f-4543-8283-89c626bbe466/latest
+    - m_Suffix: CcdBadgeName
+      m_Value: latest
+    - m_Suffix: CcdBucketId
+      m_Value: 589b953e-291f-4543-8283-89c626bbe466
+    - m_Suffix: CcdBucketName
+      m_Value: Android
+    - m_Suffix: Environmentid
+      m_Value: ae554ef2-c04b-4e13-b2b7-bcd928dc2bda
+    - m_Suffix: Environmentname
+      m_Value: development
+    - m_Suffix: LoadPath
+      m_Value: https://d1b9c7e1-b34c-4d54-b7a5-1de1ca1d5f20.client-api.unity3dusercontent.com/client_api/v1/environments/development/buckets/589b953e-291f-4543-8283-89c626bbe466/release_by_badge/latest/entry_by_path/content/?path=
+    - m_Suffix: PromoteOnly
+      m_Value: False
+  environments:
+  - id: 46d25146-da63-427a-96cc-1f706f9433e2
+    projectId: d1b9c7e1-b34c-4d54-b7a5-1de1ca1d5f20
+    projectGenesisId: d1b9c7e1-b34c-4d54-b7a5-1de1ca1d5f20
+    name: moi_truong
+    isDefault: 0
+  - id: 70bfb91f-a6e8-44ea-829f-6c2d7086e174
+    projectId: d1b9c7e1-b34c-4d54-b7a5-1de1ca1d5f20
+    projectGenesisId: d1b9c7e1-b34c-4d54-b7a5-1de1ca1d5f20
+    name: production
+    isDefault: 1
+  - id: ae554ef2-c04b-4e13-b2b7-bcd928dc2bda
+    projectId: d1b9c7e1-b34c-4d54-b7a5-1de1ca1d5f20
+    projectGenesisId: d1b9c7e1-b34c-4d54-b7a5-1de1ca1d5f20
+    name: development
+    isDefault: 0
   currentEnvironment:
     id: 
     projectId: 

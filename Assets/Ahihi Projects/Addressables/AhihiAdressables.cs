@@ -29,7 +29,7 @@ public class AhihiAdressables : MonoBehaviour
         //    if (result.Status == AsyncOperationStatus.Succeeded)
         //        Instantiate(result.Result);
         //    else Debug.LogError($"AssetReference {reference1.RuntimeKey} failed to load.");
-        //    reference1.ReleaseAsset();
+        //    //reference1.ReleaseAsset();
         //};
 
         reference2.LoadAssetAsync().Completed += result =>
@@ -37,7 +37,7 @@ public class AhihiAdressables : MonoBehaviour
             if (result.Status == AsyncOperationStatus.Succeeded)
                 dcm.sprite = result.Result;
             else Debug.LogError($"AssetReference {reference2.RuntimeKey} failed to load.");
-            reference2.ReleaseAsset();
+            //reference2.ReleaseAsset();
         };
 
         //AsyncOperationHandle<GameObject>  handle = Addressables.LoadAssetAsync<GameObject>(address);
