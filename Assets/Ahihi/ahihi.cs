@@ -1,6 +1,8 @@
 ﻿using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using Newtonsoft.Json;
+using Sirenix.OdinInspector;
+using Sirenix.Serialization;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -174,10 +176,5 @@ public class ahihi : MonoBehaviour
     private void Update()
     {
         
-    }
-
-    public void dcm()
-    {
-        print("1 cham la say dam");
     }
 }
