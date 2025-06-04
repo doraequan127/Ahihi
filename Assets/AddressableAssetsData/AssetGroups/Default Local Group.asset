@@ -35,6 +35,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bcc264807cc973541991b8ec6a3046f5
+    m_Address: Assets/Ahihi Projects/Addressables/psg.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c262de22613fe5342a72f3e01607d1aa
     m_Address: Assets/Ahihi/Double Dagger Stab.fbx
     m_ReadOnly: 0

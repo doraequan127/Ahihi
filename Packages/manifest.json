@@ -20,6 +20,7 @@
     "com.unity.netcode.gameobjects": "2.3.0",
     "com.unity.nuget.newtonsoft-json": "3.2.1",
     "com.unity.probuilder": "6.0.5",
+    "com.unity.project-auditor": "1.0.1",
     "com.unity.recorder": "5.1.2",
     "com.unity.services.ccd.management": "3.0.2",
     "com.unity.services.multiplayer": "1.1.2",

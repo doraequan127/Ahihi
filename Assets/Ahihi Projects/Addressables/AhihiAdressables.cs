@@ -24,13 +24,13 @@ public class AhihiAdressables : MonoBehaviour
         //    reference.ReleaseAsset();
         //};
 
-        //reference1.LoadAssetAsync().Completed += result =>
-        //{
-        //    if (result.Status == AsyncOperationStatus.Succeeded)
-        //        Instantiate(result.Result);
-        //    else Debug.LogError($"AssetReference {reference1.RuntimeKey} failed to load.");
-        //    //reference1.ReleaseAsset();
-        //};
+        reference1.LoadAssetAsync().Completed += result =>
+        {
+            if (result.Status == AsyncOperationStatus.Succeeded)
+                Instantiate(result.Result);
+            else Debug.LogError($"AssetReference {reference1.RuntimeKey} failed to load.");
+            //reference1.ReleaseAsset();
+        };
 
         reference2.LoadAssetAsync().Completed += result =>
         {
